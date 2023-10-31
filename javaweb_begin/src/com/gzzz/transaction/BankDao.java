@@ -60,7 +60,7 @@ public class BankDao {
         if (i > 0) {
             System.out.println("转账成功");
         } else {
-            System.out.println("转账失败");
+            throw new RuntimeException("转账失败");
         }
 
         //7.关闭资源

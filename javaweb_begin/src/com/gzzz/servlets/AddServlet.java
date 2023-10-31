@@ -21,6 +21,10 @@ import java.sql.SQLException;
 public class AddServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //get方式下不需要设置编码（tomcat8之后）
+        //post方式下，设置编码，防止中文乱码，这句话必须在所有的获取参数动作之前，如果放在任一句之后都会导致之后还会出现中文乱码
+        req.setCharacterEncoding("utf-8");
+
         String fromAccount = req.getParameter("fromAccount");
         String fmoney = req.getParameter("fmoney");
         Integer money = Integer.parseInt(fmoney);
