@@ -13,6 +13,18 @@
         <!--数字越小，启动时机越靠前，最小为0!-->
         <load-on-startup>1</load-on-startup>
     </servlet>
+    <servlet>
+        <servlet-name>Demo3Servlet</servlet-name>
+        <servlet-class>com.gzzz.servlets.Demo3Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Demo4Servlet</servlet-name>
+        <servlet-class>com.gzzz.servlets.Demo4Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Demo5Servlet</servlet-name>
+        <servlet-class>com.gzzz.servlets.Demo5Servlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Demo1Servlet</servlet-name>
         <url-pattern>/demo1</url-pattern>
@@ -20,5 +32,17 @@
     <servlet-mapping>
         <servlet-name>Demo2Servlet</servlet-name>
         <url-pattern>/demo2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Demo3Servlet</servlet-name>
+        <url-pattern>/demo3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+            <servlet-name>Demo4Servlet</servlet-name>
+            <url-pattern>/demo4</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Demo5Servlet</servlet-name>
+        <url-pattern>/demo5</url-pattern>
     </servlet-mapping>
 </web-app>
