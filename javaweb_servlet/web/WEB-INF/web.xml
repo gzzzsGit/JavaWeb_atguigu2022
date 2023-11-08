@@ -25,6 +25,14 @@
         <servlet-name>Demo5Servlet</servlet-name>
         <servlet-class>com.gzzz.servlets.Demo5Servlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Demo6Servlet</servlet-name>
+        <servlet-class>com.gzzz.servlets.Demo6Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Demo7Servlet</servlet-name>
+        <servlet-class>com.gzzz.servlets.Demo7Servlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Demo1Servlet</servlet-name>
         <url-pattern>/demo1</url-pattern>
@@ -44,5 +52,13 @@
     <servlet-mapping>
         <servlet-name>Demo5Servlet</servlet-name>
         <url-pattern>/demo5</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Demo6Servlet</servlet-name>
+        <url-pattern>/demo6</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Demo7Servlet</servlet-name>
+        <url-pattern>/demo7</url-pattern>
     </servlet-mapping>
 </web-app>

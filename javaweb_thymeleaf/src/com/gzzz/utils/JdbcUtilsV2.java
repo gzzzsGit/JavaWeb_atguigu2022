@@ -12,10 +12,12 @@ package com.gzzz.utils;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.pool.DruidDataSourceFactory;
-import org.junit.Test;
 
 import javax.sql.DataSource;
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Properties;
@@ -45,7 +47,6 @@ public class JdbcUtilsV2 {
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
-
         try {
             properties.load(is);
         } catch (IOException e) {
